@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #051622; /* 更深的背景色 */
+  --accent-color: #ff6b6b;   /* 珊瑚红 */
+  --sidebar-bg: #0b2434;    /* 侧边栏背景 */
+  --card-bg: #112b3c;       /* 卡片背景 */
+  --text-main: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #051622;
+}
+
+#app {
+  width: 100%;
+}
+
+/* 页面容器通用样式 */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-container::before {
+  content: '这个页面等待你来填写内容...';
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
